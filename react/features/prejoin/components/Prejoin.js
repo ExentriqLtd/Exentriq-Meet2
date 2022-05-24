@@ -3,11 +3,13 @@
 import InlineDialog from '@atlaskit/inline-dialog';
 import React, { Component } from 'react';
 
+import { Avatar } from '../../base/avatar';
 import { getRoomName } from '../../base/conference';
 import { isNameReadOnly } from '../../base/config';
 import { translate } from '../../base/i18n';
 import { IconArrowDown, IconArrowUp, IconPhone, IconVolumeOff } from '../../base/icons';
 import { isVideoMutedByUser } from '../../base/media';
+import { getLocalParticipant } from '../../base/participants';
 import { ActionButton, InputField, PreMeetingScreen } from '../../base/premeeting';
 import { connect } from '../../base/redux';
 import { getDisplayName, updateSettings } from '../../base/settings';
@@ -19,6 +21,7 @@ import {
 } from '../actions';
 import {
     isDeviceStatusVisible,
+    isDisplayNameEditable,
     isDisplayNameRequired,
     isJoinByPhoneButtonVisible,
     isJoinByPhoneDialogVisible
@@ -28,6 +31,11 @@ import DropdownButton from './DropdownButton';
 import JoinByPhoneDialog from './dialogs/JoinByPhoneDialog';
 
 type Props = {
+
+    /**
+     * Indicates whether the display  name is editable.
+     */
+    canEditDisplayName: boolean,
 
     /**
      * Flag signaling if the device status is visible or not.
@@ -58,6 +66,11 @@ type Props = {
      * Updates settings.
      */
     updateSettings: Function,
+
+    /**
+     * Local participant id.
+     */
+    participantId: string,
 
     /**
      * The prejoin config.
@@ -325,11 +338,13 @@ class Prejoin extends Component<Props, State> {
      */
     render() {
         const {
+            canEditDisplayName,
             deviceStatusVisible,
             hasJoinByPhoneButton,
             joinConference,
             joinConferenceWithoutAudio,
             name,
+            participantId,
             prejoinConfig,
             readOnlyName,
             showCameraPreview,
@@ -360,7 +375,7 @@ class Prejoin extends Component<Props, State> {
                 <div
                     className = 'prejoin-input-area'
                     data-testid = 'prejoin.screen'>
-                    <InputField
+                    {canEditDisplayName ? (<InputField
                         autoComplete = { 'name' }
                         autoFocus = { true }
                         className = { showError ? 'error' : '' }
@@ -370,6 +385,16 @@ class Prejoin extends Component<Props, State> {
                         placeHolder = { t('dialog.enterDisplayName') }
                         readOnly = { readOnlyName }
                         value = { name } />
+                    ) : (
+                        <>
+                            <Avatar
+                                className = 'prejoin-avatar'
+                                displayName = { name }
+                                participantId = { participantId }
+                                size = { 72 } />
+                            <div className = 'prejoin-avatar-name'>{name}</div>
+                        </>
+                    )}
 
                     {showError && <div
                         className = 'prejoin-error'
@@ -423,18 +448,21 @@ class Prejoin extends Component<Props, State> {
 function mapStateToProps(state): Object {
     const name = getDisplayName(state);
     const showErrorOnJoin = isDisplayNameRequired(state) && !name;
+    const { id: participantId } = getLocalParticipant(state);
 
     return {
-        name,
+        canEditDisplayName: isDisplayNameEditable(state) || showErrorOnJoin,
         deviceStatusVisible: isDeviceStatusVisible(state),
+        hasJoinByPhoneButton: isJoinByPhoneButtonVisible(state),
+        name,
+        participantId,
+        prejoinConfig: state['features/base/config'].prejoinConfig,
+        readOnlyName: isNameReadOnly(state),
         roomName: getRoomName(state),
+        showCameraPreview: !isVideoMutedByUser(state),
         showDialog: isJoinByPhoneDialogVisible(state),
         showErrorOnJoin,
-        hasJoinByPhoneButton: isJoinByPhoneButtonVisible(state),
-        readOnlyName: isNameReadOnly(state),
-        showCameraPreview: !isVideoMutedByUser(state),
-        videoTrack: getLocalJitsiVideoTrack(state),
-        prejoinConfig: state['features/base/config'].prejoinConfig
+        videoTrack: getLocalJitsiVideoTrack(state)
     };
 }
 

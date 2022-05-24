@@ -37,6 +37,16 @@ export function isDisplayNameRequired(state: Object): boolean {
 }
 
 /**
+ * Selector for determining if the display name is editable.
+ *
+ * @param {Object} state - The state of the app.
+ * @returns {boolean}
+ */
+export function isDisplayNameEditable(state: Object): boolean {
+    return !state['features/base/config'].disableDisplayNameEditing;
+}
+
+/**
  * Returns the text for the prejoin status bar.
  *
  * @param {Object} state - The state of the app.
