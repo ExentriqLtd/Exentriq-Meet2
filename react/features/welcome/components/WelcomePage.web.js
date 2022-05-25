@@ -203,10 +203,10 @@ class WelcomePage extends AbstractWelcomePage {
                     <div className = 'header-image' />
                     <div className = 'header-container'>
                         <h1 className = 'header-text-title'>
-                            { t('welcomepage.headerTitle') }
+                            The Adaptive Platform for Adaptive Organizations
                         </h1>
                         <span className = 'header-text-subtitle'>
-                            { t('welcomepage.headerSubtitle')}
+                            Exentriq Meet is the secure Voice and Video call extension of Exentriq Talk that turns conversations into group audio-video calls. It enables you to create Meeting Rooms to share with friends, colleagues, teams and peers or to connect with your Exentriq contacts using audio and video to enjoy high quality group calls.
                         </span>
                         <div id = 'enter_room'>
                             <div className = 'enter-room-input-container'>
@@ -256,7 +256,7 @@ class WelcomePage extends AbstractWelcomePage {
                     </div>
                 </div>
 
-                <div className = 'welcome-cards-container'>
+                {/* <div className = 'welcome-cards-container'>
                     <div className = 'welcome-card-row'>
                         <div className = 'welcome-tabs welcome-card welcome-card--blue'>
                             { this._renderTabs() }
@@ -273,7 +273,7 @@ class WelcomePage extends AbstractWelcomePage {
                             className = 'welcome-page-content'
                             ref = { this._setAdditionalContentRef } />
                         : null }
-                </div>
+                </div> */}
                 { DISPLAY_WELCOME_FOOTER && this._renderFooter()}
             </div>
 

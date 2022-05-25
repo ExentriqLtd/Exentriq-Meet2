@@ -12,6 +12,7 @@ body.welcome-page {
     justify-content: space-between;
     min-height: 100vh;
     position: relative;
+    background: linear-gradient(-90deg,#117661 0,#18a588 50%,#1bbc9b 100%);
 
     .header {
         background-image: $welcomePageHeaderBackground;
@@ -19,7 +20,6 @@ body.welcome-page {
         background-repeat: $welcomePageHeaderBackgroundRepeat;
         background-size: $welcomePageHeaderBackgroundSize;
         padding-bottom: $welcomePageHeaderPaddingBottom;
-        background-color: #131519;
         height: 400px;
         overflow: hidden;
         position: relative;
@@ -138,6 +138,7 @@ body.welcome-page {
     }
 
     .tab-container {
+        display: none !important;
         font-size: 16px;
         position: relative;
         text-align: left;
@@ -183,7 +184,7 @@ body.welcome-page {
     .welcome-page-button {
         border: 0;
         font-size: 14px;
-        background: #0074E0;
+        background: #1BBC9B;
         border-radius: 3px;
         color: #FFFFFF;
         cursor: pointer;
