@@ -351,7 +351,7 @@ function _translateLegacyConfig(oldValue: Object) {
     }
 
     newValue.defaultRemoteDisplayName
-        = newValue.defaultRemoteDisplayName || 'Fellow Jitster';
+        = newValue.defaultRemoteDisplayName || 'Fellow Exentriq';
 
     return newValue;
 }
