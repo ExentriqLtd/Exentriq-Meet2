@@ -20,7 +20,7 @@ body.welcome-page {
         background-repeat: $welcomePageHeaderBackgroundRepeat;
         background-size: $welcomePageHeaderBackgroundSize;
         padding-bottom: $welcomePageHeaderPaddingBottom;
-        height: 400px;
+        height: 100vh;
         overflow: hidden;
         position: relative;
 
@@ -29,6 +29,9 @@ body.welcome-page {
             flex-direction: column;
             margin: $welcomePageHeaderContainerMargin;
             z-index: $zindex2;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
         }
 
         .header-text-title {
@@ -49,7 +52,7 @@ body.welcome-page {
             line-height: 26px;
             margin: 16px 0 32px 0;
             text-align: $welcomePageHeaderTextAlign;
-
+            max-width: $welcomePageHeaderTitleMaxWidth;
         }
 
         #enter_room {
