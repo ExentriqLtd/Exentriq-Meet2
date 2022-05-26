@@ -557,7 +557,7 @@ body{
 }
 
 
-.modal-dialog-form{
+/*.modal-dialog-form{
      & > div{
         color: $primary-font-color;
     }
@@ -600,16 +600,16 @@ body{
 }
 .bYQrfF{
     box-shadow: none;
-}
+}*/
 
-button#modal-dialog-cancel-button{
+/*button#modal-dialog-cancel-button{
     background-color: transparent;
     span{
         color: $primary-color;
     }
-}
+}*/
 
-.toolbox-content{
+/*.toolbox-content{
     // .eYJELv {
     //     background-color: $dialog-colors;
     //     color: $primary-font-color;
@@ -652,7 +652,7 @@ button#modal-dialog-cancel-button{
             background: $light-grey;
         }
     }
-// }
+// }*/
 .kuyJLl{
     background-color: $color-white !important;
     color: $primary-font-color !important;
@@ -754,3 +754,41 @@ button#modal-dialog-cancel-button{
     border-radius: 6px;
     pointer-events: all;
 }
+
+#videoconference_page .new-toolbox .toolbox-content .toolbox-icon.hangup-button{
+    background-color: $hangup-button;
+}
+
+.settings-button-small-icon{
+    background: $light-grey;
+}
+
+.settings-button-small-icon>svg {
+    fill: $primary-color;
+}
+
+#videoconference_page .new-toolbox .toolbox-content .toolbox-icon.hangup-button:hover{
+    opacity:0.8
+}
+
+/*.audio-preview-speaker:focus .audio-preview-entry, .audio-preview-speaker:focus-within .audio-preview-entry, .audio-preview-speaker:hover .audio-preview-entry, .audio-preview-microphone:hover .audio-preview-entry{
+    background-color: $light-grey;
+}
+
+.video-preview-container, .reactions-menu{
+    background-color: $color-white;
+}
+
+.stage-filmstrip span:not(.tile-view) .filmstrip .resizable-filmstrip #remoteVideos .videocontainer, .vertical-filmstrip span:not(.tile-view) .filmstrip .resizable-filmstrip #remoteVideos .videocontainer{
+    border: 2px solid transparent;
+}
+
+.jss65{
+    background-color: $color-white !important;
+    color: $dark-grey !important;
+}
+
+.jss65 svg{
+    fill: $dark-grey
+}
+*/

@@ -534,7 +534,7 @@ var config = {
     // defaultLanguage: 'en',
 
     // Disables profile and the edit of all fields from the profile settings (display name and email)
-    // disableProfile: false,
+    disableProfile: true,
 
     // Hides the email section under profile settings.
     // hideEmailInSettings: false,
@@ -1009,7 +1009,7 @@ var config = {
     // Mainly privacy related settings
 
     // Disables all invite functions from the app (share, invite, dial out...etc)
-    // disableInviteFunctions: true,
+    disableInviteFunctions: true,
 
     // Disables storing the room name to the recents list. When in an iframe this is ignored and
     // the room is never stored in the recents list.
@@ -1026,7 +1026,7 @@ var config = {
     // },
 
     // Options related to the remote participant menu.
-    // remoteVideoMenu: {
+    remoteVideoMenu: {
     //     // Whether the remote video context menu to be rendered or not.
     //     disabled: true,
     //     // If set to true the 'Kick out' button will be disabled.
@@ -1034,8 +1034,8 @@ var config = {
     //     // If set to true the 'Grant moderator' button will be disabled.
     //     disableGrantModerator: true,
     //     // If set to true the 'Send private message' button will be disabled.
-    //     disablePrivateChat: true
-    // },
+        disablePrivateChat: true
+    },
 
     // Endpoint that enables support for salesforce integration with in-meeting resource linking
     // This is required for:

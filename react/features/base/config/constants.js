@@ -32,7 +32,6 @@ export const TOOLBAR_BUTTONS = [
     'mute-everyone',
     'mute-video-everyone',
     'participants-pane',
-    'profile',
     'raisehand',
     'security',
     'select-background',
