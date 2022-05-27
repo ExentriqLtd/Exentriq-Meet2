@@ -4,23 +4,23 @@
 export const THRESHOLDS = [
     {
         width: 520,
-        order: [ 'microphone', 'camera', 'desktop', 'chat', 'invite', 'participants', 'tileview' ]
+        order: [ 'invite', 'chat', 'microphone', 'camera', 'desktop', 'tileview' ]
     },
     {
         width: 470,
-        order: [ 'microphone', 'camera', 'desktop', 'chat', 'invite', 'participants' ]
+        order: [ 'invite', 'chat', 'microphone', 'camera', 'desktop' ]
     },
     {
         width: 420,
-        order: [ 'microphone', 'camera', 'desktop', 'chat', 'invite' ]
+        order: [ 'invite', 'chat', 'microphone', 'camera', 'desktop' ]
     },
     {
         width: 370,
-        order: [ 'microphone', 'camera', 'chat', 'invite' ]
+        order: [ 'invite', 'chat', 'microphone', 'camera' ]
     },
     {
         width: 225,
-        order: [ 'microphone', 'camera', 'invite' ]
+        order: [ 'invite', 'microphone', 'camera' ]
     },
     {
         width: 200,
