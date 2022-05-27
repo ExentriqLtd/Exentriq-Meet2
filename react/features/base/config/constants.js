@@ -48,7 +48,8 @@ export const TOOLBAR_BUTTONS = [
 /**
  * The toolbar buttons to show on premeeting screens.
  */
-export const PREMEETING_BUTTONS = [ 'microphone', 'camera', 'select-background', 'settings' ];
+
+export const PREMEETING_BUTTONS = [ 'invite', 'microphone', 'camera', 'select-background', 'settings' ];
 
 /**
   * The toolbar buttons to show on 3rdParty prejoin screen.
