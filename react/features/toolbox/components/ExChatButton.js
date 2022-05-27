@@ -25,10 +25,10 @@ type Props = AbstractButtonProps & {
  * @extends AbstractButton
  */
 class ExChatButton extends AbstractButton<Props, *> {
-    accessibilityLabel = 'toolbar.accessibilityLabel.exChat';
+    accessibilityLabel = 'toolbar.accessibilityLabel.chat';
     icon = IconChat;
-    label = 'toolbar.exChat';
-    tooltip = 'toolbar.exChat';
+    label = 'toolbar.chat';
+    tooltip = 'toolbar.chat';
     className = 'ex-btn-default';
 
     /**
