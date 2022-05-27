@@ -4,11 +4,11 @@
 export const THRESHOLDS = [
     {
         width: 520,
-        order: [ 'invite', 'chat', 'microphone', 'camera', 'desktop', 'tileview' ]
+        order: [ 'invite', 'chat', 'microphone', 'camera', 'desktop', 'raisehand', 'tileview' ]
     },
     {
         width: 470,
-        order: [ 'invite', 'chat', 'microphone', 'camera', 'desktop' ]
+        order: [ 'invite', 'chat', 'microphone', 'camera', 'desktop', 'raisehand' ]
     },
     {
         width: 420,
@@ -19,14 +19,15 @@ export const THRESHOLDS = [
         order: [ 'invite', 'chat', 'microphone', 'camera' ]
     },
     {
-        width: 225,
+        width: 320,
         order: [ 'invite', 'microphone', 'camera' ]
     },
     {
-        width: 200,
+        width: 270,
         order: [ 'microphone', 'camera' ]
     }
 ];
+
 
 export const NOT_APPLICABLE = 'N/A';
 
