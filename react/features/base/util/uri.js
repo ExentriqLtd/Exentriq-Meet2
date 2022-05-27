@@ -233,7 +233,7 @@ export function parseStandardURIString(str: string) {
     // avoid potential later problems related to whitespace in URI, strip any
     // whitespace. Anyway, the Jitsi Meet app is not known to utilize unencoded
     // whitespace so the stripping is deemed safe.
-    str = str.replace(/\s/g, '');
+    // str = str.replace(/\s/g, '');
 
     // protocol
     regex = new RegExp(URI_PROTOCOL_PATTERN, 'gi');

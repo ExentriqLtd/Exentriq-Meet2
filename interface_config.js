@@ -8,8 +8,8 @@
  * config.js, and no new options should be added here.
  */
 
-var interfaceConfig = {
-    APP_NAME: 'Jitsi Meet',
+ var interfaceConfig = {
+    APP_NAME: 'Exentriq Meet',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
 
@@ -27,8 +27,8 @@ var interfaceConfig = {
     CLOSE_PAGE_GUEST_HINT: false, // A html text to be shown to guests on the close page, false disables it
 
     DEFAULT_BACKGROUND: '#040404',
-    DEFAULT_LOGO_URL: 'images/watermark.svg',
-    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
+    DEFAULT_LOGO_URL: 'https://www.exentriq.com/static_exentriqdotcom//documents/exentriq_3/9503b4cb-e2bb-465d-bce7-20a914436ce1.svg',
+    DEFAULT_WELCOME_PAGE_LOGO_URL: 'https://www.exentriq.com/static_exentriqdotcom//documents/exentriq_3/9503b4cb-e2bb-465d-bce7-20a914436ce1.svg',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
 
@@ -64,7 +64,7 @@ var interfaceConfig = {
      */
     DISABLE_VIDEO_BACKGROUND: false,
 
-    DISPLAY_WELCOME_FOOTER: true,
+    DISPLAY_WELCOME_FOOTER: false,
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
     DISPLAY_WELCOME_PAGE_CONTENT: false,
     DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
@@ -87,7 +87,7 @@ var interfaceConfig = {
      */
     HIDE_INVITE_MORE_HEADER: false,
 
-    JITSI_WATERMARK_LINK: 'https://jitsi.org',
+    JITSI_WATERMARK_LINK: 'https://www.exentriq.com',
 
     LANG_DETECTION: true, // Allow i18n to detect the system language
     LIVE_STREAMING_HELP_LINK: 'https://jitsi.org/live', // Documentation reference for the live streaming feature.
