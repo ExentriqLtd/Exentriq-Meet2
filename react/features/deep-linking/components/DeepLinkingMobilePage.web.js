@@ -202,7 +202,7 @@ class DeepLinkingMobilePage extends Component<Props> {
     _generateDownloadURL() {
         const { _downloadUrl: url } = this.props;
 
-        if (url && typeof interfaceConfig.MOBILE_DYNAMIC_LINK === 'undefined') {
+        if (url) {
             return url;
         }
 
@@ -218,7 +218,7 @@ class DeepLinkingMobilePage extends Component<Props> {
         } = interfaceConfig.MOBILE_DYNAMIC_LINK || {};
 
         const domain = CUSTOM_DOMAIN ?? `https://${APP_CODE}.app.goo.gl`;
-        const IUS = interfaceConfig.APP_SCHEME || 'org.jitsi.meet';
+        const IUS = interfaceConfig.APP_SCHEME || 'meet.exentriq.com';
 
         return `${domain}/?link=${
             encodeURIComponent(window.location.href)}&apn=${

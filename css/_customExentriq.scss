@@ -237,8 +237,7 @@ body{
             background: $primary-color-light;
         }
     }
-    .filmstrip{
-         /*max-width: 145px !important;*/
+    /*.filmstrip{
         .videocontainer__hoverOverlay{
             border-radius: 0px;
         }
@@ -258,7 +257,7 @@ body{
                 }
             }
         }
-    }
+    }*/
 }
 .cjMOOK{
     .kRmIj{
@@ -277,7 +276,7 @@ body{
     }
 }
 
-#videoconference_page{
+/*#videoconference_page{
     .new-toolbox {
         .toolbox-content {
             .button-group-center{
@@ -411,15 +410,15 @@ body{
             }
         }
     }
-}
+}*/
 
 //tooltip
 //styled__Tooltip-fadon5-1 irXsJ styled__TooltipPrimitive-fadon5-0 drTAhx
-.irXsJ{
+/*.irXsJ{
     background-color: $primary-font-color !important;
     color: $color-white !important;
     border-radius: 2px !important;
-}
+}*/
 
 
 .show-connection-indicator{
@@ -745,7 +744,7 @@ body{
     }
 }
 
-.toolbox-content-items {
+/*.toolbox-content-items {
     margin: 0 auto;
     padding: 6px;
     background: transparent !important;
@@ -770,6 +769,19 @@ body{
 #videoconference_page .new-toolbox .toolbox-content .toolbox-icon.hangup-button:hover{
     opacity:0.8
 }
+
+#videoconference_page .new-toolbox .toolbox-content .toolbox-icon:hover{
+    background-color: $hangup-button !important;
+    opacity: 0.8;
+}
+
+.toolbox-icon.toggled{
+    background-color: $color-white !important;
+    svg{
+        fill: $primary-color;
+    }
+}
+*/
 
 /*.audio-preview-speaker:focus .audio-preview-entry, .audio-preview-speaker:focus-within .audio-preview-entry, .audio-preview-speaker:hover .audio-preview-entry, .audio-preview-microphone:hover .audio-preview-entry{
     background-color: $light-grey;

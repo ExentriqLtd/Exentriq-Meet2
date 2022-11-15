@@ -307,7 +307,12 @@ class WelcomePage extends AbstractWelcomePage {
         event.preventDefault();
 
         if (!this._roomInputRef || this._roomInputRef.reportValidity()) {
-            this._onJoin();
+            window.open(
+                `https://talk.exentriq.com/meet/${this._roomInputRef.value}?meet=${this._roomInputRef.value}`,
+                '_blank'
+            );
+            this._roomInputRef.value = '';
+            //this._onJoin();
         }
     }
 
