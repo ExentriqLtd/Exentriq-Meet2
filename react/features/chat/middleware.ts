@@ -33,7 +33,7 @@ import { endpointMessageReceived } from '../subtitles/actions.any';
 import { showToolbox } from '../toolbox/actions';
 
 
-import { ADD_MESSAGE, CLOSE_CHAT, OPEN_CHAT, SEND_MESSAGE, SET_IS_POLL_TAB_FOCUSED } from './actionTypes';
+import { ADD_MESSAGE, CLOSE_CHAT, OPEN_CHAT, OPEN_EX_CHAT, SEND_MESSAGE, SET_IS_POLL_TAB_FOCUSED } from './actionTypes';
 import { addMessage, clearMessages, closeChat } from './actions.any';
 import { ChatPrivacyDialog } from './components';
 import {
@@ -91,6 +91,13 @@ MiddlewareRegistry.register(store => next => action => {
 
     case CONFERENCE_JOINED:
         _addChatMsgListener(action.conference, store);
+        break;
+
+    case OPEN_EX_CHAT:
+        unreadCount = 0;
+        if (typeof APP !== 'undefined') {
+            APP.API.notifyExOpenChat();
+        }
         break;
 
     case OPEN_CHAT:

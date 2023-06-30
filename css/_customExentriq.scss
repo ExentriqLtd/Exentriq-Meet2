@@ -1,0 +1,754 @@
+
+/** Custom Exentriq CSS **/
+
+/** Font Import **/
+
+@font-face {
+    font-family: 'Roboto';
+  	font-weight: 300;
+    src: url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Light.woff') format('woff'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Light.ttf') format('truetype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Light.svg') format('svg');
+}
+@font-face {
+    font-family: 'Roboto';
+  font-weight: 500;
+    src: url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Regular.woff') format('woff'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Regular.ttf') format('truetype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Regular.svg') format('svg');
+}
+@font-face {
+    font-family: 'Roboto';
+  	font-weight: 700;
+    src: url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Medium.woff') format('woff'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Medium.ttf') format('truetype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Medium.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Roboto';
+  	font-weight: 900;
+    src: url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Bold.woff') format('woff'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Bold.ttf') format('truetype'), url('https://cdn001exe.exentriq.com/exentriq-delivery/fonts/Exentriq-Roboto/Roboto-Bold.svg') format('svg');
+}
+
+/** General Variables **/
+
+$logo-image: 'https://www.exentriq.com/static_exentriqdotcom//documents/exentriq_3/9503b4cb-e2bb-465d-bce7-20a914436ce1.svg';
+$background-image: linear-gradient(-90deg,#117661 0,#18a588 50%,#1bbc9b 100%);
+$primary-color: #1bbc9b;
+$primary-color-light: #8ddecd;
+$primary-color-dark: #117661;
+$primary-font-color: #4a4a4a;
+$dark-grey: #cdcdcd;
+$focus-call: #dce775;
+$light-grey: #f5f5f5;
+$hangup-button: #bf2117;
+$hover-rooms: #f5f5f5;
+$dialog-colors: #ffffff;
+$color-white: #ffffff;
+$baseFontFamily: 'Roboto', Helvetica, Arial;
+
+body, input, textarea, keygen, select, button {
+    font-family: $baseFontFamily !important;
+}
+
+body{
+    background: $color-white;
+}
+
+/** Welcome Page **/
+
+.enter-room-input-container {
+    ::placeholder {
+        color: $primary-font-color !important;
+    }
+}
+
+.welcome {
+    background-image: $background-image;
+    .leftwatermark {
+        top: 10px;
+        background-image: url($logo-image);
+    }
+    .header {
+        background-image: $background-image;
+        height: 100vh;
+        background-color: $primary-font-color;
+        .tab-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            .meetings-list {
+                .item.with-click-handler:hover {
+                background-color: $light-grey !important;
+                }
+            }
+        }
+        .meetings-list {
+            color: $primary-font-color;
+            .item{
+                background: $color-white;
+            }
+        }
+        #enter_room {
+            .enter-room-input-container{
+                color: $primary-font-color;
+                &.focus-visible {
+                    outline: auto 2px $primary-font-color;
+                }
+            }
+        }
+    }
+    .welcome-page-button{
+        background: $primary-color;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+}
+/** Settings Modal **/
+.eoRGoR{
+    background-color: $color-white !important;
+    color: $primary-font-color;
+    .kXiYgu{
+        color: $primary-font-color;
+    }
+    .jsYMHu{
+        background-color: $color-white;
+        border-color: transparent;
+        border-bottom: 2px solid $primary-color;
+        &:hover{
+            background-color: $color-white;
+        }
+    }
+    .dEUJGG{
+        background-color: $color-white;
+        border-color: transparent;
+        border-bottom: 2px solid $primary-color;
+    }
+    .oQiLZ{
+        color: $primary-font-color;
+        &:hover {
+            color: $primary-color-light;
+        }
+    }
+    .iqNwPx{
+        color: $primary-color;
+        &:hover {
+            color: $primary-color;
+        }
+        &:active {
+            color: $primary-color;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .bHNyBH{
+        background-color: $primary-color;
+    }
+    .audio-input-preview{
+        background: $dark-grey;
+        .audio-input-preview-level{
+            background: $primary-color;
+        }
+    }
+    .ybfvp{
+        background-color: $dark-grey;
+    }
+    .device-selector-label{
+        color: $primary-font-color;
+    }
+    .audio-output-preview{
+        a{
+            color: $color-white;
+            background: $primary-color;
+            border-radius: 2px;
+            padding: 8px 16px;
+            line-height: 55px;
+            &:hover{
+                color: $color-white;
+            }
+        }
+    }
+    #modal-dialog-ok-button{
+        background: $primary-color;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        span{
+            color: $color-white;
+        }
+        &.dhygeq{
+            background: $primary-color;
+        }
+        &.c0FUqs{
+            background: $primary-color;
+        }
+    }
+    #modal-dialog-cancel-button{
+        span{
+            color: $primary-color;
+        }
+        &.kkIlFY{
+            background: transparent;
+        }
+        &.ivQdFS{
+            background: transparent;
+        }
+    }
+    .device-selection{
+        .device-selectors{
+            .device-selector-trigger{
+                background-color: $color-white;
+                border: none;
+                border-bottom: 2px solid $primary-color;
+                color: $primary-color;
+                border-radius: 0px;
+                padding: 0;
+                .device-selector-trigger-text{
+                    margin-left: -3px;
+                    color: $primary-font-color;
+                }
+            }
+        }
+    }
+    .cksvax{
+        background-color: $color-white;
+        border: none !important;
+        border-radius: 0;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    }
+    .hWFSra{
+        color: $primary-font-color;
+        &:hover{
+            background-color: $light-grey;
+            color: $primary-font-color;
+        }
+    }
+    .GVpqe{
+        color: $primary-font-color;
+    }
+    /** More Section **/
+    .oQiLZ{
+        /*display:none;*/
+    }
+}
+
+/** Chat Page **/
+
+body{
+    background-color: transparent !important;
+}
+
+.tOoji{
+    background-color: transparent !important;
+}
+
+#videospace{
+    .watermark.leftwatermark{
+        display:none;
+    }
+    .large-video-labels{
+        .circular-label{
+            background: $primary-color-light;
+        }
+    }
+    .filmstrip{
+        .videocontainer__hoverOverlay{
+            border-radius: 0px;
+        }
+        .filmstrip__videos{
+            .videocontainer{
+                border-radius: 0px;
+                .videocontainer__background{
+                    border-radius: 0px;
+                }
+                &.videoContainerFocused{
+                    border: 2px solid $focus-call;
+                    box-shadow: inset 0 0 3px $primary-color,0 0 3px $focus-call;
+                }
+                &:hover:not(.videoContainerFocused):not(.active-speaker){
+                    border: 2px solid $primary-color;
+                    box-shadow: inset 0 0 3px  $primary-color,0 0 3px  $primary-color;
+                }
+            }
+        }
+    }
+}
+// .cjMOOK{
+//     .kRmIj{
+//         position: fixed;
+//         top: 10px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+//         left: 20px;
+//         .Wrapper-sc-19lmueh-0{
+//             position: relative;
+//             transform: none;
+//             margin-top: 10px;
+//         }
+//     }
+// }
+
+// #videoconference_page{
+//     .new-toolbox {
+//         .toolbox-content {
+//             .button-group-center{
+//                 .toolbox-button{
+//                     .toolbox-icon  {
+//                         background-color: $hangup-button;
+//                         -webkit-transition-duration: 0.2s;
+//                         -o-transition-duration: 0.2s;
+//                             transition-duration: 0.2s;
+//                         &:hover{
+//                             background-color: $hangup-button !important;
+//                         }
+//                         svg {
+//                             fill: $color-white;
+//                         }
+//                         &.toggled{
+//                             border: 1px solid #fff;
+//                             background-color: transparent !important;
+//                             -webkit-transition-duration: 0.2s;
+//                             -o-transition-duration: 0.2s;
+//                                 transition-duration: 0.2s;
+//                         }
+//                     }
+
+//                     &.toolbox-hangup {
+// 	                    .toolbox-icon  {
+// 		                	width: 56px;
+// 	                        height: 56px;
+// 	                        svg {
+// 		                        width: 36px;
+// 	                            height: 36px;
+// 	                        }
+// 	                    }
+//                 	}
+
+//                     &[aria-label="Toggle screenshare"]{
+//                         .toolbox-icon  {
+//                             background-color: $primary-color;
+//                             svg {
+//                                 fill: $color-white;
+//                             }
+//                             &:hover{
+//                                 background-color: $primary-color !important;
+//                             }
+//                         }
+//                     }
+//                     &.ex-btn-default {
+//                         .toolbox-icon {
+//                             background-color: $primary-color;
+//                             &:hover{
+//                                 background-color: $primary-color !important;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .audio-preview, .video-preview{
+//                     overflow: visible;
+//                     .settings-button-container{
+//                         .toolbox-icon {
+//                             color: $color-white;
+//                             background-color: $primary-color;
+//                             &:hover{
+//                                 background-color: $primary-color !important;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .video-preview{
+//                     &>div>div:nth-child(2)>div>div{
+//                         background-color: $color-white;
+//                     }
+//                 }
+//             }
+//             .button-group-right{
+//                 .toolbox-icon{
+//                     border: 1px solid transparent;
+//                     .jitsi-icon {
+//                         svg{
+//                             height: 20px;
+//                             width: 20px;
+//                         }
+//                     }
+//                 }
+//             }
+//             .button-group-left{
+//                 .toolbox-icon{
+//                     border: 1px solid transparent;
+//                     .jitsi-icon {
+//                         svg{
+//                             height: 20px;
+//                             width: 20px;
+//                         }
+//                     }
+//                 }
+//             }
+//             .toolbox-icon{
+//                 border-radius: 50%;
+//                 background-color: $primary-color;
+//                 padding: 4px;
+//                 box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0,0,0,.12);
+//                 &:hover{
+//                     background-color: $primary-color !important;
+//                 }
+//             }
+//             .overflow-menu{
+//                 .beta-tag {
+//                     background: $primary-color;
+//                     color: $color-white;
+//                 }
+//                 .overflow-menu-item-icon{
+//                     color: $primary-font-color;
+//                     svg{
+//                         fill: $primary-color!important;
+//                         path{
+//                             fill: $primary-color!important;
+//                         }
+//                     }
+//                 }
+//                 .overflow-menu-item{
+//                     padding: 8px 16px;
+//                     color: $primary-font-color;
+//                         &:hover{
+//                            background-color: $light-grey;
+//                         }
+//                         .overflow-menu-item-icon{
+//                         .avatar{
+//                             background-color: $primary-color !important;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+//tooltip
+//styled__Tooltip-fadon5-1 irXsJ styled__TooltipPrimitive-fadon5-0 drTAhx
+// .irXsJ{
+//     background-color: $primary-font-color !important;
+//     color: $color-white !important;
+//     border-radius: 2px !important;
+// }
+
+
+.show-connection-indicator{
+     > div{
+        > div:nth-child(2){
+            > div{
+                > div{
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+    table.connection-info__container{
+        color: $primary-font-color !important;
+    }
+    a.showmore{
+        color: $primary-color;
+        &:hover{
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.toolbox-button-wth-dialog{
+    ul.overflow-menu {
+        background-color: $dialog-colors !important;
+        color: $primary-font-color;
+    }
+     > div{
+        > div:nth-child(2){
+            > div{
+                > div{
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+    .info-dialog{
+        .info-dialog-column{
+            .info-dialog-title{
+                color: $primary-font-color;
+            }
+            span{
+                 color: $primary-font-color;
+            }
+            .jitsi-icon{
+                svg{
+                    fill: $primary-color;
+                }
+            }
+        }
+    }
+    table.connection-info__container{
+        color: $primary-font-color !important;
+    }
+    .info-dialog{
+        .info-dialog-action-link::before {
+            color: $primary-color;
+        }
+    }
+    a {
+        color: $primary-color !important;
+        font-weight: 400;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    .popover{
+        .popupmenu__item{
+            a{
+                color: $primary-font-color !important;
+            }
+        }
+     }
+}
+
+.info-dialog {
+    .info-label {
+        min-width: 40px;
+    }
+}
+
+
+// .hZoQfM{
+//     border-bottom: 1px solid #e1e1e1;
+// }
+// .bYQrfF{
+//     border-bottom: 1px solid #e1e1e1;
+// }
+
+// #videoconference_page{
+//     .new-toolbox{
+//         .button-group-center{
+//             .ex-btn-default.ex-btn-screenshare{
+//                 .toolbox-icon {
+//                     background-color: transparent !important;
+//                     border: 1px solid #fff;
+//                 }
+//                 .toolbox-icon.toggled{
+//                     background-color: $primary-color !important;
+//                     border: 1px solid transparent;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.ex-btn-raisehand {
+    .toolbox-icon.toggled {
+        .jitsi-icon {
+            svg{
+                    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+                    animation-duration: 2.5s;
+                    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+                    display: inline-block;
+            }
+        }
+    }
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+.new-toolbox .toolbox-content .button-group-center .toolbox-button .toolbox-icon:hover{
+    border: 1px solid transparent;
+}
+
+
+.modal-dialog-form{
+     & > div{
+        color: $primary-font-color;
+    }
+    .speaker-stats{
+        .speaker-stats-item__labels{
+            .speaker-stats-item__name, .speaker-stats-item__time{
+                font-weight: 700;
+                color: $primary-font-color;
+            }
+        }
+        .speaker-stats-item {
+            .speaker-stats-item__name, .speaker-stats-item__time{
+                color: $primary-font-color;
+            }
+        }
+    }
+    .item-action{
+        .hRySvC{
+            background-color: $primary-color-dark;
+        }
+    }
+    .video-quality-dialog-label-container{
+        &.active{
+            .video-quality-dialog-label{
+                color: $primary-color;
+            }
+        }
+    }
+    .settings-sub-pane{
+        &.language-settings{
+            display:none;
+        }
+        .iVWXDg{
+            color: $primary-font-color;
+        }
+    }
+}
+// .gTnpKC{
+//     box-shadow: none;
+// }
+// .bYQrfF{
+//     box-shadow: none;
+// }
+
+// button#modal-dialog-cancel-button{
+//     background-color: transparent;
+//     span{
+//         color: $primary-color;
+//     }
+// }
+
+// .toolbox-content{
+//     // .eYJELv {
+//     //     background-color: $dialog-colors;
+//     //     color: $primary-font-color;
+//     //     background: $dialog-colors;
+//         .audio-preview-entry-text{
+//             color: $primary-font-color;
+//         }
+//         .video-preview-entry{
+//             border: 3px solid $primary-color;
+//         }
+//         .audio-preview-content{
+//             background-color: #fff;
+//             .audio-preview-header{
+//                 color: $primary-font-color;
+//             }
+//             .jitsi-icon {
+//                 svg{
+//                     path{
+//                         fill: $primary-color;
+//                     }
+//                 }
+//             }
+//             .audio-preview-icon--check {
+//                 background: $primary-color;
+//                 svg{
+//                     path{
+//                         fill: $color-white;
+//                     }
+//                 }
+//             }
+//             .jitsi-icon.metr>svg {
+//                 fill: $dark-grey;
+//                 width: 38px;
+//             }
+//             .metr-l-0 rect:first-child, .metr-l-1 rect:nth-child(-n+2), .metr-l-2 rect:nth-child(-n+3), .metr-l-3 rect:nth-child(-n+4), .metr-l-4 rect:nth-child(-n+5), .metr-l-5 rect:nth-child(-n+6), .metr-l-6 rect:nth-child(-n+7), .metr-l-7 rect:nth-child(-n+8) {
+//                 fill: $primary-color;
+//             }
+//         }
+//         .audio-preview-entry--selected{
+//             background: $light-grey;
+//         }
+//     }
+
+// .kuyJLl{
+//     background-color: $color-white !important;
+//     color: $primary-font-color !important;
+//     .dRfhRk{
+//         color: $primary-font-color !important;
+//     }
+//     .jdkWJB{
+//         svg{
+//             path{
+//                 fill: $primary-color !important;
+//             }
+//         }
+//     }
+//     .kGQNDu{
+//         .grxEhq{
+//             svg{
+//                 path{
+//                     fill: $primary-font-color;
+//                 }
+//             }
+//         }
+//     }
+//     .beynCI{
+//         color: $primary-font-color !important;
+//     }
+// }
+
+/*Overlay*/
+
+// .tlylZ{
+//     background: rgba(0,0,0,0.5) !important;
+// }
+
+/* Audio Widget */
+
+// .videocontainer > .audioindicator-container .audiodot-bottom, .videocontainer > .audioindicator-container .audiodot-middle, .videocontainer > .audioindicator-container .audiodot-top, .videocontainer > span.audioindicator .audiodot-bottom, .videocontainer > span.audioindicator .audiodot-middle, .videocontainer > span.audioindicator .audiodot-top{
+//     background: $primary-color;
+// }
+// .videocontainer > .audioindicator-container span.audiodot-bottom::after, .videocontainer > .audioindicator-container span.audiodot-middle::after, .videocontainer > .audioindicator-container span.audiodot-top::after, .videocontainer > span.audioindicator span.audiodot-bottom::after, .videocontainer > span.audioindicator span.audiodot-middle::after, .videocontainer > span.audioindicator span.audiodot-top::after{
+//     background: $primary-color;
+// }
+
+/* Modal Quality*/
+
+.video-quality-dialog {
+    .video-quality-dialog-contents {
+        .video-quality-dialog-slider {
+            @mixin sliderTrackStyles() {
+                background: $dark-grey;
+            }
+            &::-ms-track {
+                @include sliderTrackStyles();
+            }
+
+            &::-moz-range-track {
+                @include sliderTrackStyles();
+            }
+
+            &::-webkit-slider-runnable-track {
+                @include sliderTrackStyles();
+            }
+        }
+        .video-quality-dialog-label-container.active {
+            color: $primary-color;
+
+            &::before {
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+// .settings-sub-pane{
+//     .kNWCdZ, .UyZlz, .jacfej, .bVpDAv, .cRcBsX{
+//         color: $color-white ;
+//         rect:first-child{
+//             stroke: #455166;
+//         }
+//     }
+//     .bINed, .cdTUKf, .cRiLYT, .daPWMQ, .fWoEvM, .lrBNp{
+//         color:$primary-color;
+//         fill: $color-white;
+//         rect:first-child{
+//             stroke: $primary-color;
+//         }
+//     }
+// }
+// .indicator-container{
+//     span.raisehandindicator{
+//         background: $primary-color;
+//     }
+// }

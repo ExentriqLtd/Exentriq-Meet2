@@ -572,6 +572,10 @@ class Toolbox extends Component<IProps> {
             sliceIndex -= 1;
         }
 
+        const f = filtered;
+
+        console.log('0...._getVisibleButtons:::', f.slice(0, sliceIndex), f.slice(sliceIndex));
+
         return {
             mainMenuButtons: filtered.slice(0, sliceIndex),
             overflowMenuButtons: filtered.slice(sliceIndex)

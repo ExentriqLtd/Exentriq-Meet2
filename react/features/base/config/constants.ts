@@ -14,6 +14,7 @@ export const _CONFIG_STORE_PREFIX = 'config.js';
  * @type Array<string>
  */
 export const TOOLBAR_BUTTONS = [
+    'invite',
     'camera',
     'chat',
     'closedcaptions',
@@ -27,7 +28,6 @@ export const TOOLBAR_BUTTONS = [
     'hangup',
     'help',
     'highlight',
-    'invite',
     'linktosalesforce',
     'livestreaming',
     'microphone',
@@ -64,7 +64,7 @@ export const THIRD_PARTY_PREJOIN_BUTTONS = [ 'microphone', 'camera', 'select-bac
 /**
  * The toolbar buttons to show when in visitors mode.
  */
-export const VISITORS_MODE_BUTTONS = [ 'chat', 'hangup', 'raisehand', 'settings', 'tileview' ];
+export const VISITORS_MODE_BUTTONS = [ 'chat', 'invite', 'hangup', 'raisehand', 'settings', 'tileview' ];
 
 /**
  * The set of feature flags.

@@ -1,0 +1,13 @@
+export const EXENTRIQ_AVATAR_URL = 'https://www.exentriq.com/AvatarService?username=';
+export const EXENTRIQ_TALK_URL = 'https://talk.exentriq.com';
+export const EXENTRIQ_CONFERENCE_URL = 'https://talk.exentriq.com/meet';
+export const URL_EXENTRIQ_HOST = 'https://www.exentriq.com/JSON-RPC';
+export const EXENTRIQ_MEET = 'https://app004exe.exentriq.com';
+export const iosClientId = '841515951225-6o0vpv7ga2op8ukn8sosf9ipb6k1hhuv.apps.googleusercontent.com';
+export const webClientId = '334920019454-88445uh3e20i7idsvr4m85eflellmenr.apps.googleusercontent.com';
+export const notificationAppName = 'meet';
+export const notificationVoipAppName = 'meet.voip';
+export const integrationBusSetIosTokenPath = 'http://bus.stage.exentriq.com:1880/setIosToken';
+export const integrationBusRemoveIosTokenPath = 'http://bus.stage.exentriq.com:1880/removeIosToken';
+export const integrationBusSetAndroidTokenPath = 'http://bus.stage.exentriq.com:1880/setAndroidToken';
+export const integrationBusRemoveAndroidTokenPath = 'http://bus.stage.exentriq.com:1880/removeAndroidToken';

@@ -157,7 +157,9 @@ const events = {
     'suspend-detected': 'suspendDetected',
     'tile-view-changed': 'tileViewChanged',
     'toolbar-button-clicked': 'toolbarButtonClicked',
-    'whiteboard-status-changed': 'whiteboardStatusChanged'
+    'whiteboard-status-changed': 'whiteboardStatusChanged',
+    'ex-invite-user': 'exInviteUser',
+    'ex-open-chat': 'exOpenChatRoom'
 };
 
 /**

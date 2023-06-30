@@ -1153,6 +1153,24 @@ class API {
     }
 
     /**
+     * Notify external application (if API is enabled) that the open exentriq chat.
+     *
+     * @returns {void}
+     */
+    notifyExOpenChat() {
+        this._sendEvent({ name: 'ex-open-chat' });
+    }
+
+    /**
+     * Notify external application (if API is enabled) that the invite exentriq user.
+     *
+     * @returns {void}
+     */
+    notifyExInviteUser() {
+        this._sendEvent({ name: 'ex-invite-user' });
+    }
+
+    /**
      * Notify external application (if API is enabled) that message was sent.
      *
      * @param {string} message - Message body.

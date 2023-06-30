@@ -4,31 +4,32 @@
 export const THRESHOLDS = [
     {
         width: 565,
-        order: [ 'microphone', 'camera', 'desktop', 'chat', 'raisehand', 'reactions', 'participants', 'tileview' ]
+        // eslint-disable-next-line max-len
+        order: [ 'invite', 'microphone', 'camera', 'desktop', 'chat', 'raisehand', 'reactions', 'tileview' ]
     },
     {
         width: 520,
-        order: [ 'microphone', 'camera', 'desktop', 'chat', 'raisehand', 'participants', 'tileview' ]
+        order: [ 'invite', 'microphone', 'camera', 'desktop', 'chat', 'raisehand', 'tileview' ]
     },
     {
         width: 470,
-        order: [ 'microphone', 'camera', 'desktop', 'chat', 'raisehand', 'participants' ]
+        order: [ 'invite', 'microphone', 'camera', 'desktop', 'chat', 'raisehand' ]
     },
     {
         width: 420,
-        order: [ 'microphone', 'camera', 'desktop', 'chat', 'participants' ]
+        order: [ 'invite', 'microphone', 'camera', 'desktop', 'chat' ]
     },
     {
         width: 370,
-        order: [ 'microphone', 'camera', 'chat', 'participants' ]
+        order: [ 'invite', 'microphone', 'camera', 'chat' ]
     },
     {
         width: 225,
-        order: [ 'microphone', 'camera', 'chat' ]
+        order: [ 'invite', 'microphone', 'camera' ]
     },
     {
         width: 200,
-        order: [ 'microphone', 'camera' ]
+        order: [ 'invite', 'microphone' ]
     }
 ];
 

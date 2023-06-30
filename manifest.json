@@ -1,14 +1,14 @@
 {
-  "android_package_name": "org.jitsi.meet",
+  "android_package_name": "com.exentriq.meet",
   "prefer_related_applications": true,
   "related_applications": [
     {
-      "id": "org.jitsi.meet",
+      "id": "com.exentriq.meet",
       "platform": "chromeos_play"
     }
   ],
-  "short_name": "Jitsi Meet",
-  "name": "Jitsi Meet",
+  "short_name": "Exentriq Meet",
+  "name": "Exentriq Meet",
   "icons": [
     {
       "src": "static/pwa/icons/icon192.png",
@@ -33,4 +33,3 @@
   "scope": "/",
   "theme_color": "#17A0DB"
  }
- 
