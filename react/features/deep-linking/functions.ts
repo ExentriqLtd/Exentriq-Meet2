@@ -66,15 +66,17 @@ export function getDeepLinkingPage(state: IReduxState) {
             || (isVpaasMeeting(state) && (!appScheme || appScheme === 'com.8x8.meet'))) {
         return Promise.resolve();
     }
-
-    if (isMobileBrowser()) { // mobile
-        const mobileAppPromo
-            = typeof interfaceConfig === 'object'
-                && interfaceConfig.MOBILE_APP_PROMO;
-
-        return Promise.resolve(
-            typeof mobileAppPromo === 'undefined' || Boolean(mobileAppPromo)
-                ? DeepLinkingMobilePage : NoMobileApp);
+    //ignore check mobile if in url ignoreMobileCheck
+    if (!window.location.href.includes('ignoreMobileCheck')) {
+        if (isMobileBrowser()) { // mobile
+            const mobileAppPromo
+                = typeof interfaceConfig === 'object'
+                    && interfaceConfig.MOBILE_APP_PROMO;
+    
+            return Promise.resolve(
+                typeof mobileAppPromo === 'undefined' || Boolean(mobileAppPromo)
+                    ? DeepLinkingMobilePage : NoMobileApp);
+        }
     }
 
     return _openDesktopApp(state).then(

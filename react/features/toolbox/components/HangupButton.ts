@@ -31,6 +31,14 @@ class HangupButton extends AbstractHangupButton<AbstractButtonProps> {
 
         this._hangup = _.once(() => {
             sendAnalytics(createToolbarEvent('hangup'));
+            /** 
+                This code is used to send a message from the React Native webview to the native application
+                using the ReactNativeWebView library. The message contains an action called 'LEAVE_CONFERENCE',
+                which can be handled by the native application to perform certain operations when the user
+                decides to leave a conference.
+            */
+            //@ts-ignore
+            window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ action: 'LEAVE_CONFERENCE' }));
             this.props.dispatch(leaveConference());
         });
     }

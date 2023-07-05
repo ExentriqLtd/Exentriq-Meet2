@@ -15,6 +15,7 @@ declare global {
 
     interface Window {
         config: IConfig;
+        ReactNativeWebView: any;
         JITSI_MEET_LITE_SDK?: boolean;
         interfaceConfig?: any;
         JitsiMeetJS?: any;
