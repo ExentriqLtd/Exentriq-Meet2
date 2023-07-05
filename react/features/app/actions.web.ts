@@ -10,6 +10,7 @@ import {
 import { createFakeConfig, restoreConfig } from '../base/config/functions.web';
 import { setLocationURL } from '../base/connection/actions.web';
 import { loadConfig } from '../base/lib-jitsi-meet/functions.web';
+import { updateSettings } from '../base/settings/actions';
 import { inIframe } from '../base/util/iframeUtils';
 import { parseURLParams } from '../base/util/parseURLParams';
 import {
@@ -125,6 +126,18 @@ export function appNavigate(uri?: string) {
             dispatch(loadConfigError(new Error('Config no longer needed!'), locationURL));
 
             return;
+        }
+
+        /**
+         * add change avatar from url hash
+         * this is necessary for webview mobile app react native
+         */
+        const urlParams = new URLSearchParams(location.hash.slice(1));
+        const avatarURL = urlParams.get('userInfo.avatarUrl');
+        if (avatarURL) {
+            dispatch(updateSettings({
+                avatarURL
+            }));
         }
 
         dispatch(setLocationURL(locationURL));
