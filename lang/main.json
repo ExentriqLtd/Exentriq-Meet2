@@ -75,7 +75,7 @@
     },
     "calendarSync": {
         "addMeetingURL": "Add a meeting link",
-        "confirmAddLink": "Do you want to add a Jitsi link to this event?",
+        "confirmAddLink": "Do you want to add a Exentriq link to this event?",
         "error": {
             "appConfiguration": "Calendar integration is not properly configured.",
             "generic": "An error has occurred. Please check your calendar settings or try refreshing the calendar.",
@@ -489,7 +489,7 @@
         "answer": "Answer",
         "audioCallTitle": "Incoming call",
         "decline": "Dismiss",
-        "productLabel": "from Jitsi Meet",
+        "productLabel": "from Exentriq Meet",
         "videoCallTitle": "Incoming video call"
     },
     "info": {
@@ -744,7 +744,7 @@
         "noiseSuppressionFailedTitle": "Failed to start noise suppression",
         "noiseSuppressionNoTrackDescription": "Please unmute your microphone first.",
         "noiseSuppressionStereoDescription": "Stereo audio noise suppression is not currently supported.",
-        "oldElectronClientDescription1": "You appear to be using an old version of the Jitsi Meet client which has known security vulnerabilities. Please make sure you update to our ",
+        "oldElectronClientDescription1": "You appear to be using an old version of the Exentriq Meet client which has known security vulnerabilities. Please make sure you update to our ",
         "oldElectronClientDescription2": "latest build",
         "oldElectronClientDescription3": " now!",
         "participantWantsToJoin": "Wants to join the meeting",
@@ -1434,7 +1434,7 @@
             "roomname": "Enter room name"
         },
         "addMeetingName": "Add Meeting name",
-        "appDescription": "Go ahead, video chat with the whole team. In fact, invite everyone you know. {{app}} is a fully encrypted, 100% open source video conferencing solution that you can use all day, every day, for free — with no account needed.",
+        "appDescription": "Exentriq Meet is the secure Voice and Video call extension of Exentriq Talk that turns conversations into group audio-video calls. It enables you to create Meeting Rooms to share with friends, colleagues, teams and peers or to connect with your Exentriq contacts using audio and video to enjoy high quality group calls.",
         "audioVideoSwitch": {
             "audio": "Voice",
             "video": "Video"
@@ -1447,15 +1447,15 @@
         "go": "GO",
         "goSmall": "GO",
         "headerSubtitle": "Secure and high quality meetings",
-        "headerTitle": "Jitsi Meet",
+        "headerTitle": "Exentriq Meet",
         "info": "Dial-in info",
-        "jitsiOnMobile": "Jitsi on mobile – download our apps and start a meeting from anywhere",
+        "jitsiOnMobile": "Exentriq on mobile – download our apps and start a meeting from anywhere",
         "join": "CREATE / JOIN",
         "logo": {
             "calendar": "Calendar logo",
             "desktopPreviewThumbnail": "Desktop preview thumbnail",
             "googleLogo": "Google Logo",
-            "logoDeepLinking": "Jitsi meet logo",
+            "logoDeepLinking": "Exentriq meet logo",
             "microsoftLogo": "Microsoft logo",
             "policyLogo": "Policy logo"
         },

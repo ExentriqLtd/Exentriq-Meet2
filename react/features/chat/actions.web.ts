@@ -2,7 +2,7 @@
 import VideoLayout from '../../../modules/UI/videolayout/VideoLayout';
 import { IStore } from '../app/types';
 
-import { OPEN_CHAT } from './actionTypes';
+import { OPEN_EX_CHAT } from './actionTypes';
 import { closeChat } from './actions.any';
 
 export * from './actions.any';
@@ -21,7 +21,7 @@ export function openChat(participant?: Object, _disablePolls?: boolean) {
     return function(dispatch: IStore['dispatch']) {
         dispatch({
             participant,
-            type: OPEN_CHAT
+            type: OPEN_EX_CHAT
         });
     };
 }
@@ -33,7 +33,7 @@ export function openChat(participant?: Object, _disablePolls?: boolean) {
  */
 export function toggleChat() {
     return (dispatch: IStore['dispatch'], getState: IStore['getState']) => {
-        const isOpen = getState()['features/chat'].isOpen;
+        const isOpen = false; //getState()['features/chat'].isOpen;
 
         if (isOpen) {
             dispatch(closeChat());

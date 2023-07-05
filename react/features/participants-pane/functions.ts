@@ -174,7 +174,7 @@ export const shouldRenderInviteButton = (state: IReduxState) => {
     const flagEnabled = getFeatureFlag(state, INVITE_ENABLED, true);
     const inBreakoutRoom = isInBreakoutRoom(state);
 
-    return flagEnabled && !disableInviteFunctions && !inBreakoutRoom;
+    return true; //flagEnabled && !disableInviteFunctions && !inBreakoutRoom;
 };
 
 /**

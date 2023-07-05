@@ -17,7 +17,10 @@ import './middleware.any';
 MiddlewareRegistry.register(store => next => action => {
     switch (action.type) {
     case BEGIN_ADD_PEOPLE:
-        return _beginAddPeople(store, next, action);
+        if (typeof APP !== 'undefined') {
+            APP.API.notifyExInviteUser();
+        }
+        break;
     case HIDE_ADD_PEOPLE_DIALOG:
         return _hideAddPeopleDialog(store, next, action);
     }

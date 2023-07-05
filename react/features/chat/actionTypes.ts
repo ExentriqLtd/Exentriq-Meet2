@@ -51,6 +51,15 @@ export const EDIT_MESSAGE = 'EDIT_MESSAGE';
 export const OPEN_CHAT = 'OPEN_CHAT';
 
 /**
+ * The type of the action which signals to display the chat panel.
+ *
+ * {
+ *     type: OPEN_EX_CHAT
+ * }
+ */
+export const OPEN_EX_CHAT = 'OPEN_EX_CHAT';
+
+/**
  * The type of the action which signals a send a chat message to everyone in the
  * conference.
  *
