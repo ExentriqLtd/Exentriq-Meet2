@@ -126,11 +126,8 @@ function Toolbox(props: IProps) {
                     styles = { buttonStylesBorderless }
                     toggledStyles = { toggledButtonStyles } />
                 }
-                { _endConferenceSupported
-                    ? <HangupMenuButton />
-                    : <HangupButton
-                        styles = { hangupButtonStyles } />
-                }
+                <HangupButton
+                    styles = { hangupButtonStyles } />
             </SafeAreaView>
         </View>
     );
