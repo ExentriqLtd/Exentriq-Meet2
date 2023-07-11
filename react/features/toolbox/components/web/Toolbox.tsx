@@ -891,8 +891,13 @@ class Toolbox extends Component<IProps> {
                                 showRaiseHandInReactionsMenu = { showRaiseHandInReactionsMenu }
                                 showReactionsMenu = { showReactionsInOverflowMenu } />
                         )}
-
-                        { isToolbarButtonEnabled('hangup', _toolbarButtons) && (
+                        <HangupButton
+                            buttonKey = 'hangup'
+                            customClass = 'hangup-button'
+                            key = 'hangup-button'
+                            notifyMode = { this._getButtonNotifyMode('hangup') }
+                            visible = { isToolbarButtonEnabled('hangup', _toolbarButtons) } />
+                        {/* REMOVE FOR TALK WEB { isToolbarButtonEnabled('hangup', _toolbarButtons) && (
                             _endConferenceSupported
                                 ? <HangupMenuButton
                                     ariaControls = 'hangup-menu'
@@ -920,7 +925,7 @@ class Toolbox extends Component<IProps> {
                                     key = 'hangup-button'
                                     notifyMode = { this._getButtonNotifyMode('hangup') }
                                     visible = { isToolbarButtonEnabled('hangup', _toolbarButtons) } />
-                        )}
+                        )} */}
                     </div>
                 </div>
             </div>
